@@ -7,8 +7,8 @@
 typedef struct diccionario diccionario_t;
 
 struct diccionario_par {
-    const char* clave;
-    const void* valor;
+	const char *clave;
+	const void *valor;
 };
 
 /*
@@ -52,7 +52,10 @@ size_t diccionario_cantidad(diccionario_t *d);
 *
 * Devuelve la cantidad de elementos iterados.
 */
-size_t diccionario_con_cada_elemento(diccionario_t* d, bool (*f)(struct diccionario_par* , void*), void* extra);
+size_t diccionario_con_cada_elemento(diccionario_t *d,
+				     bool (*f)(struct diccionario_par *,
+					       void *),
+				     void *extra);
 
 /**
  * Destruye el diccionario y aplica la función destructora a cada valor almacenado
