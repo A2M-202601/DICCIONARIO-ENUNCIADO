@@ -40,7 +40,7 @@ void *diccionario_obtener(diccionario_t *d, const char *clave);
 /*
 * Devuelve true si la clave existe dentro del diccionario.
 */
-bool *diccionario_existe(diccionario_t *d, const char *clave);
+bool diccionario_existe(diccionario_t *d, const char *clave);
 
 /**
  * Devuelve la cantidad de claves almacenadas en el diccionario
